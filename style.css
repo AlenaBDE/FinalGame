@@ -6,6 +6,10 @@ h2 {
     text-align: center;
 }
 
+.wrapper-header{
+    margin-top: 50px;
+}
+
 .items {
     display: inline-block;
     height: 100px;
@@ -27,6 +31,11 @@ h2 {
     border-radius: 6px;
     outline: none;
     background: rgb(38, 80, 110);
+}
+
+.button-div {
+    display: inline-block;
+    margin-left: 15%;
 
 }
 
@@ -52,23 +61,8 @@ button:active {
     color: white;
     font-size: 20px;
      width: 100%;
-
 }
 
-ul {
-    padding-left: 1400px;
-}
-
-li {
-    list-style-type: none;
-    display: inline;
-    padding: 40px;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
-}
 
 p {
     color: white;
@@ -78,17 +72,6 @@ p {
     margin: 0;
 }
 
-li a:hover {
-    font-weight: bold;
-}
-
-.menu-item:hover {
-    border-top: solid 1px;
-    border-color: white;
-    display: inline-block;
-    margin-right: 3px;
-    margin-top: 0px;
-}
 
 .main-content {
     width: 100%;
@@ -100,9 +83,8 @@ li a:hover {
 .rules {
     width: 50%;
     height: 298px;
-    display: block;
-    margin-right: 20px;
-    margin-left: 500px;
+    display: inline-block;
+    margin-left: 25%;
     float: left;
     font-size: 25px;
     color: white;
