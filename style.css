@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(92, 157, 204);
+}
+
+h2 {
+    text-align: center;
+}
+
+.items {
+    display: inline-block;
+    height: 100px;
+}
+
+.button {
+    display: inline-block;
+    width: 15em;
+    font-size: 80%;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: #2e7ebd 0 1px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1;
+    white-space: pre-line;
+    padding: .7em 0;
+    border: 1px solid;
+    border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+    border-radius: 6px;
+    outline: none;
+    background: rgb(38, 80, 110);
+
+}
+
+.button:first-line {
+    font-size: 170%;
+    font-weight: 700;
+}
+
+.button:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+
+button:active {
+    color: rgb(255, 255, 255);
+    border-color: #2970a9;
+    background-image: linear-gradient(#5796c8, #6aa2ce);
+    box-shadow: none;
+}
+
+.header-content {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+     width: 100%;
+
+}
+
+ul {
+    padding-left: 1400px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 40px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-size: 55px;
+    font-style: Comic Sans MS;
+    text-align: center;
+    margin: 0;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    border-top: solid 1px;
+    border-color: white;
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: 0px;
+}
+
+.main-content {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    margin-top: 20px;
+}
+
+.rules {
+    width: 50%;
+    height: 298px;
+    display: block;
+    margin-right: 20px;
+    margin-left: 500px;
+    float: left;
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+}
+
+.screenshots {
+    width: 45%;
+    display: inline-block;
+    height: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: right;
+}
+
+.img {
+    margin-left: 90px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+

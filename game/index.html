@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class='wrapper-info'>
+    <p class="text-wrapper">Против Вас играет:<span id="name"></span></p>
+    <div id="timer" class="timer">
+        <div id="hour">00</div>&nbsp;:
+        <div id="minute">00</div>&nbsp;:
+        <div id="second">00</div>
+    </div>
+</div>
+<div class="wrapper-canvas">
+    <canvas id="canvas" width="1000" height="500"></canvas>
+
+    <!--Модальное окно выбора заклинаний-->
+    <div id="choice" class="choice">
+        <h2 class="info">Выбор заклинания</h2>
+        <div class="content-choice">
+            <p class="info">Выберите тип задачи:</p>
+        </div>
+        <form>
+            <input type="radio" id="arifmetic" name="radio">Арифметические примеры<Br>
+            <input type="radio" id="audio" name="radio">Аудирование<Br>
+            <input type="radio" id="translate" name="radio">Перевод с английского языка на русский<Br>
+        </form>
+    </div>
+
+    <!--Модальное окно задачи-->
+    <div id="task" class="choice">
+        <h2 class="info">Задание</h2>
+        <p class="info2"></p>
+        <div id="content-task" class="content-task">
+            <!--вставка текста таска через js-->
+            <div id="div-image" class="div-image"><img src="images/audio.png" height="32" width="32"/></div>
+            <div class="div-span"><span id="span-text"></span>
+                <input id="vvod" type="text" size="10">
+                <button id="button-result" class="button" onclick="checkResult()">Ответить</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Модальное окно регистрации-->
+    <div id="win" class="win">
+        <div class="overlayM"></div>
+        <div class="visible">
+            <h2>Регистрация</h2>
+            <div class="content">
+                <p class='info-reg'>Name
+                    <input id="fname" name="text" type="text">
+                    <button id='button-registration' type="button" onclick="registration()">Зарегистрироваться</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Модальное окно таблицы рекордов-->
+<div id="score" class="score">
+    <table>
+        <tr>
+            <th colspan="3">Top 5</th>
+        </tr>
+        <tr>
+            <th>№</th>
+            <th>Name</th>
+            <th>Score</th>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button id="butt" class="button" onclick="startGame()">OK</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="js/vocabulary.js"></script>
+<script src="js/monster.js"></script>
+<script src="js/common.js"></script>
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
